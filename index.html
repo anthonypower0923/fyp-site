@@ -2,12 +2,52 @@
 layout: default
 ---
 
-<ul>
-    {% for post in paginator.posts %}
-      <li>
-          <h2><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h2>
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-          <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-      </li>
-    {% endfor %}
-</ul>
+<div class="page-content">
+  <div class="home">
+
+<div class="site-header-container has-cover">
+<div class="scrim has-cover">
+  <header class="site-header">
+    <h1 class="title">Cutting Through The Noise</h1>
+    <br>
+    <h3 class="subtitle">"A Forensic Analysis of the Cause and Effects of LOVE 'Noise Storms'"</h3>
+  </header>
+</div>
+</div>
+
+
+
+<div class="wrapper">
+<h2>About;</h2>
+<p>
+  Name: Anthony Power
+  <br>
+  Student Number: 20098384
+  <br>
+  Acedemic Title: "A Forensic Analysis of the Cause and Effects of LOVE 'Noise Storms'"
+  <br>
+  Commercial Title: Cutting Through The Noise
+  <br>
+</p>
+<h3>Project Description;</h3>
+<p>
+  As the name of the project implies the purpose of this is to
+  conduct a forensic investigation into 'Noise Storms' and in particular the LOVE Noise Storm that was first reported
+  by GreyNoise in August 2024 as part of their StormWatch podcast 
+  <a href="https://www.greynoise.io/storm-watch-episodes/andrew-morris-on-noise-storms-uncovering-a-hidden-message-in-millions-of-icmp-packets">https://www.greynoise.io/storm-watch-episodes/andrew-morris-on-noise-storms-uncovering-a-hidden-message-in-millions-of-icmp-packets.</a>
+  <br>
+  A brief overview of what 'Noise Storms' are is that they <i>"are large-scale spoofed packet events first observed in
+  January 2020, coinciding with the U.S. military action against Iranian General Soleimani"</i>
+  In the case of this storm the packets used spoofed IP addreses originating from Brazil and 
+  target cloud or network service providers every few months by sending multiple ICMP ping requests at one device on their network.
+  This storm gets its name because these packets contain the word "LOVE" in ASCII in the payload of the packet.
+</p>
+<p>
+  During the course of my forensic analysis of this phenomenon I have produced a detection script to be ran on packet captures
+  to discover if there is any presense of these "LOVE" packets as well as a modified version of the program believed to be
+  responsible for these packets and a parser for parsing packet captures and fixing the data capture to be readable by reversing
+  the measures taken to hide the capture in the first place such as the modifying of the send timestamp on the program to hide it
+  from dissectors when being viewed.  
+</p>
+</div>
+</div>

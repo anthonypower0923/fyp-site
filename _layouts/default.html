@@ -4,7 +4,6 @@
 
 <body>
   <div id="wrapper">
-    {% include header.html %}
     <div class="container">
       <section id="main_content">
         {{ content }}
@@ -32,10 +31,6 @@
     <span class="page-item">&raquo;</span>
     {% endif %}
   </div>
-  {% endif %} {% include footer.html %}
-
-  {% if site.google_analytics %}
-    {% include analytics.html %}
   {% endif %}
 </body>
 
