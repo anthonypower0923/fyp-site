@@ -15,12 +15,13 @@ layout: default
 </div>
 </div>
 
-
-
 <div class="wrapper">
-  <img src="https://anthonypower0923.github.io/fyp-site/assets/profile-pic.jpg">
 <h3 class="subheading"><img src="https://anthonypower0923.github.io/fyp-site/assets/bullet.png"></img> About</h3>
+<div class="card">
+  <img src="https://anthonypower0923.github.io/fyp-site/assets/profile-pic.jpg" alt="Profile Picture" style="width:40%;height: 20%;">
+</div>
 <p class="info">
+  <br>
   Name: Anthony Power
   <br>
   Student Number: 20098384
@@ -36,21 +37,21 @@ layout: default
   conduct a forensic investigation into 'Noise Storms' and in particular the LOVE Noise Storm that was first reported
   by GreyNoise in August 2024 as part of their StormWatch podcast 
   <a href="https://www.greynoise.io/storm-watch-episodes/andrew-morris-on-noise-storms-uncovering-a-hidden-message-in-millions-of-icmp-packets">https://www.greynoise.io/storm-watch-episodes/andrew-morris-on-noise-storms-uncovering-a-hidden-message-in-millions-of-icmp-packets.</a>
-  <br>
-  A brief overview of what 'Noise Storms' are is that they <i>"are large-scale spoofed packet events first observed in
-  January 2020, coinciding with the U.S. military action against Iranian General Soleimani"</i>
-  In the case of this storm the packets used spoofed IP addreses originating from Brazil and 
-  target cloud or network service providers every few months by sending multiple ICMP ping requests at one device on their network.
-  This storm gets its name because these packets contain the word "LOVE" in ASCII in the payload of the packet.
-</p>
 <p>
   During the course of my forensic analysis of this phenomenon I have produced a detection script to be ran on packet captures
   to discover if there is any presense of these "LOVE" packets as well as a modified version of the program believed to be
   responsible for these packets and a parser for parsing packet captures and fixing the data capture to be readable by reversing
   the measures taken to hide the capture in the first place such as the modifying of the send timestamp on the program to hide it
   from dissectors when being viewed.
-  <br>
   This accompanying material can be found at the projects GitHub <a href="https://github.com/anthonypower0923/FYP">https://github.com/anthonypower0923/FYP</a>
 </p>
+</div>
+<div class=footer>
+  <h3 class="subheading"><img src="https://anthonypower0923.github.io/fyp-site/assets/bullet.png" alt="Untitled"></img> Links</h3>
+  Project GiHub: <a href="https://github.com/anthonypower0923/FYP">https://github.com/anthonypower0923/FYP</a>
+  <br>
+  Project Poster: TODO
+  <br>
+  Project Report: TODO
 </div>
 </div>
